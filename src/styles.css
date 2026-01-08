@@ -38,6 +38,7 @@ header {
 
             &.show {
                 display: flex;
+                flex-direction: column;
 
             }
 
@@ -54,6 +55,7 @@ header {
                     &:hover {
                         color: var(--color-primary-1);
                         border-bottom: 2px solid var(--color-primary-1);
+                    }
                 }
             }
 
