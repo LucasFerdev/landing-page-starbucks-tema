@@ -2,14 +2,14 @@
 @import url('variables.css');
 @import url('navbar.css');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-#container{
+#container {
     background-image: url('../images/background-mobile.png');
     background-size: contain;
     height: 400vh;
@@ -31,7 +31,7 @@
         position: absolute;
         bottom: 0;
         border-radius: 30px;
-    } 
+    }
 }
 
 a.btn {
@@ -129,7 +129,7 @@ body {
     .trending-cards {
         .trending-card {
             position: relative;
-            
+
             img {
                 width: clamp(300px, 5vw, 600px);
             }
@@ -143,10 +143,10 @@ body {
                 border-radius: 5px;
 
                 i {
-                    color: var(--color-secundary-1);
-                }           
+                    color: var(--color-secondary-1);
+                }
             }
-                
+
             .trending-card-description {
                 display: flex;
                 flex-direction: column;
@@ -159,20 +159,112 @@ body {
                     font-size: 1rem;
                     font-weight: 500;
                     color: var(--color-neutral-7);
-                 }
+                }
             }
-            
+
         }
     }
 }
 
+#about {
+    padding: 32px 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-primary-1);
+    background-image: url(../images/about/bg-about.png);
+    min-height: calc(100vh - 96px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 32px;
+
+    .title {
+        color: var(--color-neutral-0);
+
+        &::before {
+            background-color: var(--color-secondary-1);
+        }
+    }
+
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+
+        .about-image {
+            width: clamp(300px, 50vw, 500px);
+        }
+
+        .about-info {
+            padding: 24px;
+            border-radius: 20px;
+            background-color: var(--color-primary-2);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+            h3 {
+                color: var(--color-neutral-0);
+                font-size: 1.8rem;
+                margin-bottom: 4px;
+
+                span {
+                    color: var(--color-secondary-1);
+                }
+            }
+
+            p {
+                color: var(--color-neutral-0);
+                font-size: 1rem;
+
+                span {
+                    color: var(--color-secondary-1);
+                    font-weight: 500;
+
+                }
+            }
+        }
+    }
+
+}
+
 @media (min-width: 768px) {
-    #trending{
+    #container {
+        background-image: url('../images/background-desktop.png');
+        background-size: cover;
+        background-position: start;
+        background-repeat: no-repeat;
+    }
+
+    #trending {
         .trending-cards {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
             gap: 24px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    #about{
+        margin: 4%;
+        justify-content: center;
+
+        .about-content {
+            flex-direction: row;
+            align-items: center;
+            gap: 48px;
+        }
+
+        .about-image {
+            order: 1;
+        }
+
+        .about-info:first-child {
+            order: 2;
+        }
+
+        .about-info:last-child {
+            order: 3;
         }
     }
 }
