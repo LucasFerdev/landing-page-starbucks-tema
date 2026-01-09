@@ -11,7 +11,12 @@
 
 #container {
     background-image: url('../images/background-mobile.png');
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    height: 100vh;
+    width: 100%;
 }
 
 .title {
@@ -283,7 +288,7 @@ body {
     #container {
         background-image: url('../images/background-desktop.png');
         background-size: cover;
-        background-position: start;
+        background-position: center;
         background-repeat: no-repeat;
     }
 
@@ -312,6 +317,17 @@ body {
                 }
             }
         }
+    }
+}
+
+footer {
+    background-color: var(--color-primary-1);
+    color: var(--color-neutral-0);
+    text-align: center;
+    padding: 12px;
+
+    p {
+        font-size: 1rem;
     }
 }
 

@@ -1,0 +1,49 @@
+# ☕ Landing Page Starbucks - Clone
+
+![Project Preview](../landing-page-starbucks-tema/src/images/detail.png)
+
+## 💻 Sobre o Projeto
+
+Este projeto é um clone da Landing Page da Starbucks, desenvolvido para fins de estudo e portfólio. O objetivo foi replicar a identidade visual da marca criando uma interface moderna e totalmente responsiva, aplicando o conceito de Mobile-First.
+
+O projeto conta com menu interativo, troca de background dinâmica e uma estrutura de código CSS moderna e organizada.
+
+## 🛠 Tecnologias Utilizadas
+
+O projeto foi desenvolvido utilizando as seguintes tecnologias:
+
+* **HTML5:** Estrutura semântica e acessível.
+* **CSS3:** Estilização, Flexbox, CSS Nesting, Variáveis (Root) e Media Queries.
+* **JavaScript:** Lógica de interação do menu mobile e efeitos de scroll.
+* **FontAwesome:** Ícones vetoriais para interface.
+* **Git & GitHub:** Versionamento e hospedagem do código.
+
+## ✨ Funcionalidades
+
+* ✅ **Responsividade:** Layout adaptável para Celulares, Tablets e Desktops.
+* ✅ **Mobile-First:** Estilização priorizando dispositivos móveis.
+* ✅ **Menu Mobile:** Menu "hambúrguer" animado para telas menores.
+* ✅ **Header Dinâmico:** O cabeçalho ganha sombra suave ao rolar a página.
+* ✅ **Background Adaptável:** A imagem de fundo se ajusta e muda conforme o dispositivo (Mobile/Desktop).
+* ✅ **Hover Effects:** Interações visuais nos botões e links de navegação.
+
+## 📂 Estrutura de Pastas
+
+```bash
+/
+├── src/
+│   ├── images/       # Ativos visuais (logos, backgrounds, produtos)
+│   ├── js/           # Lógica do site (scripty.js)
+│   └── css/          # Arquivos de estilo
+│       ├── variables.css
+│       ├── navbar.css
+│       └── styles.css
+├── index.html
+└── preview.png       # Imagem de capa do README
+
+🚀 Como executar o projeto
+Clone este repositório:
+
+git clone [https://github.com/LucasFerdev/landing-page-starbucks.git](https://github.com/LucasFerdev/landing-page-starbucks.git)
+
+Abra o arquivo index.html no seu navegador preferido.
